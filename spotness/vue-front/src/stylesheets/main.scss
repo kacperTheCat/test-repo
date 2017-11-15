@@ -1,4 +1,4 @@
-$brand-color: #e8eaf6;
+$brand-color: #3f51b5;
 $main-font: 'Roboto Condensed', sans-serif;
 $main-font-color: #333;
 .reset {
@@ -42,7 +42,9 @@ $main-font-color: #333;
 main {
 
   @extend .flexy;
-
+background: $brand-color;
+width: 100vw;
+height: 100vh;
 
 }
 
