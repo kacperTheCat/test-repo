@@ -66,24 +66,25 @@ h1 {
 }
 .test-logo{
   position: relative;
+  transform: skew(0deg, 6deg);
 }
 .test-logo::before{
   position: absolute;
   content: "";
-  width: 90%;
+  width: 100%;
   height: 2px;
   top: 0;
-transform: skew(0deg, 3deg);
+// transform: skew(0deg, 3deg);
   background: $brand-color-secondary;
   border-bottom: 2px solid $brand-color-dark;
 }
 .test-logo::after{
   position: absolute;
   content: "";
-  width: 90%;
+  width: 100%;
   height: 2px;
   top: 4rem;
-transform: skew(0deg, 3deg);
+// transform: skew(0deg, 3deg);
   background: $brand-color-dark;
     border-bottom: 2px solid $brand-color-secondary;
 }
