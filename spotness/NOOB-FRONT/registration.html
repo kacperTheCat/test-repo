@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,9 @@
   <link rel="stylesheet" href="stylesheets\main.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <title>Document</title>
 </head>
-
 <body>
   <main class="start-page">
     <div class="test-logo">
@@ -30,10 +29,22 @@
         <span class="bar"></span>
         <label  class="login-label">Password</label>
       </div>
-      <button type="submit" class="btn btn--login">Login</button>
+      <div class="login-form__field">
+        <input type="text" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label  class="login-label">Repeat password</label>
+      </div>
+      <div class="login-form__field">
+        <input type="email" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label  class="login-label">E-mail</label>
+      </div>
+      <button type="submit" class="btn btn--register-apply">Create free account</button>
       <!-- login button -->
 
-
+<!--
       <div class="flex-container--column">
         <span class="closer-text">or</span>
         <button class="loginBtn loginBtn--facebook">
@@ -45,7 +56,7 @@
 
         </button><span class="closer-text">or</span>
         <div class="btn btn--register"><a href="registration.html">Register</a></div>
-      </div>
+      </div> -->
     </form>
 
     <!-- <form class="login-with-social"> -->
@@ -53,8 +64,4 @@
     <!-- </form> -->
   </main>
 </body>
-<style>
-
-</style>
-
 </html>

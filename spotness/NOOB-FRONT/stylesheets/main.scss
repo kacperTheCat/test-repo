@@ -78,7 +78,7 @@ h1 {
   top: 0; // transform: skew(0deg, 3deg);
   background: $brand-color-secondary;
   border-bottom: 2px solid $brand-color-dark;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .test-logo::after {
@@ -89,7 +89,7 @@ h1 {
   top: 4rem; // transform: skew(0deg, 3deg);
   background: $brand-color-dark;
   border-bottom: 2px solid $brand-color-secondary;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 h2 {
@@ -112,6 +112,7 @@ a {
   @extend .reset;
   cursor: pointer;
   box-shadow: none;
+  color: #fff;
 }
 
 button {
@@ -168,6 +169,7 @@ input:focus {
   outline: none;
 }
 /* LABEL ======================================= */
+
 .login-label {
   color: #999;
   font-size: 18px;
@@ -181,7 +183,6 @@ input:focus {
   -webkit-transition: 0.2s ease all;
 }
 /* active state */
-
 input:focus ~ label,
 input:valid ~ label {
   top: -20px;
@@ -189,7 +190,6 @@ input:valid ~ label {
   color: $brand-color-secondary;
 }
 /* BOTTOM BARS ================================= */
-
 .bar {
   position: relative;
   display: block;
@@ -217,13 +217,11 @@ input:valid ~ label {
   right: 50%;
 }
 /* active state */
-
 input:focus ~ .bar:after,
 input:focus ~ .bar:before {
   width: 50%;
 }
 /* HIGHLIGHTER ================================== */
-
 .highlight {
   position: absolute;
   height: 60%;
@@ -234,7 +232,6 @@ input:focus ~ .bar:before {
   opacity: 0.5;
 }
 /* active state */
-
 input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;
@@ -288,6 +285,7 @@ input:focus ~ .highlight {
   user-select: none;
   text-align: center;
   font-size: 1rem;
+
   &--login {
     margin: 0 auto;
   }
@@ -305,8 +303,14 @@ input:focus ~ .highlight {
   }
 
   &--login:hover,
-  &--register:hover {
+  &--register:hover,&--register-apply:hover {
     background: $brand-color-secondary-light;
+  }
+  &--register-apply{
+    width: 12rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
   }
 }
 @import 'social-btn.scss';
