@@ -1,0 +1,59 @@
+@import "colors.scss";
+
+.flexy-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.flexy {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app-nav {
+  position: fixed;
+  top: 82vh;
+  width: 100vw;
+  height: 18vh;
+  background: $brand-color-dark-900;
+  border-top: 1px solid $brand-color-dark-900;
+  @extend .flexy-row;
+
+  &__element {
+    width: 32vh;
+    height: 100%;
+    @extend .flexy;
+
+    &--border {
+      border-left: 1px solid #2b348e;
+      height: 90%;
+    }
+  }
+}
+
+@import 'reset-external.scss';
+
+.fa {
+  color: #fff;
+}
+
+.main-map{
+  position: relative;
+  top: 0;
+}
